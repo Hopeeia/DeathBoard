@@ -84,8 +84,8 @@
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <LinkIncremental>false</LinkIncremental>
-    <IncludePath>$(SolutionDir)sdk\bdx_sdk\headers;$(IncludePath)</IncludePath>
-    <LibraryPath>$(SolutionDir)sdk\bdx_sdk;$(LibraryPath)</LibraryPath>
+    <IncludePath>$(SolutionDir)sdk\headers;$(IncludePath)</IncludePath>
+    <LibraryPath>$(SolutionDir)sdk;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
@@ -172,7 +172,7 @@
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <Library Include="..\sdk\bdx_sdk\LIGHTBASE.lib" />
+    <Library Include="..\sdk\LIGHTBASE.lib" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

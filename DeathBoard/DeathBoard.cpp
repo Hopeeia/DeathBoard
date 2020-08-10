@@ -7,7 +7,7 @@ void loadConfig()
 	std::string config_file = "config\\deathboard.json";
 	std::ifstream fs;
 	fs.open(config_file, std::ios::in);
-	DeathBoard_sidebar = false;
+	DeathBoard_sidebar = true;
 	if (!fs)
 	{
 		std::cout << "[DeathBoard] " << config_file << " not found, creating file(default value used)\n";
@@ -49,10 +49,3 @@ void entry()
 	});
 	std::cout << "[DeathBoard] Loaded!\n";
 }
-
-/*
-THook(void, "?onPlayerDeath@Level@@UEAAXAEAVPlayer@@AEBVActorDamageSource@@@Z", void* lev, void* player, void* damage)
-{
-	std::cout << "death\n";
-	return original(lev, player, damage);
-}*/
