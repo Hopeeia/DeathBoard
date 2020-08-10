@@ -13,7 +13,7 @@ https://wwa.lanzous.com/b07rtz2hi
 `config/deathboard.json`:
 ```
 {
-"enableSidebar": true //是否在启动时自动将死亡绑设置到sidebar
+"enableSidebar": true //是否在启动时自动将死亡榜设置到sidebar
 }
 ```
 
