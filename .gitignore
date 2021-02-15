@@ -1,6 +1,8 @@
 /x64
-/DeathBoard/x64
-/DeathBoard/Release
+/DeathBoard_BDX/x64
+/DeathBoard_BDX/Release
+/DeathBoard_LiteLoader/x64
+/DeathBoard_LiteLoader/Release
 /.vs
 /sdk
 /Release

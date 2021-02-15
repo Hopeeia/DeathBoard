@@ -20,11 +20,11 @@
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
-    <ProjectGuid>{111326B1-F368-4DEA-8F1A-DF78489D30E8}</ProjectGuid>
+    <ProjectGuid>{ABD758C6-D5DE-4A93-B3AA-0999547B4AC1}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
     <RootNamespace>DeathBoard</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
-    <ProjectName>DeathBoard</ProjectName>
+    <ProjectName>DeathBoard_BDX</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
@@ -84,8 +84,8 @@
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <LinkIncremental>false</LinkIncremental>
-    <IncludePath>$(SolutionDir)sdk\headers;$(IncludePath)</IncludePath>
-    <LibraryPath>$(SolutionDir)sdk;$(LibraryPath)</LibraryPath>
+    <IncludePath>$(SolutionDir)..\dev0711\headers;$(IncludePath)</IncludePath>
+    <LibraryPath>$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
