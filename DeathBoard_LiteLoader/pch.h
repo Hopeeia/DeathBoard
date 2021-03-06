@@ -12,6 +12,7 @@
 #include <iostream>
 #include <loader/Loader.h>
 #include <rapidjson/document.h>
+#include <api/types/types.h>
 #include <api/types/helper.h>
 #include <api/Basic_Event.h>
 #include <mc/Player.h>
