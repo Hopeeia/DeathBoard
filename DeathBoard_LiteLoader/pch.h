@@ -16,5 +16,6 @@
 #include <api/Basic_Event.h>
 #include <mc/Player.h>
 #include <mc/OffsetHelper.h>
+#include <filesystem>
 
 #endif //PCH_H

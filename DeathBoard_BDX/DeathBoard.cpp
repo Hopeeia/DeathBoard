@@ -44,8 +44,8 @@ void entry()
 	});
 	addListener([](ServerStartedEvent& ev)
 	{
-		BDX::runcmd(u8"scoreboard objectives add deathboard dummy ËÀÍö°ñ");
-		if (DeathBoard_sidebar) BDX::runcmd("scoreboard objectives setdisplay sidebar deathboard descending");
+		BDX::runcmdEx(u8"scoreboard objectives add deathboard dummy ËÀÍö°ñ");
+		if (DeathBoard_sidebar) BDX::runcmdEx("scoreboard objectives setdisplay sidebar deathboard descending");
 	});
 	std::cout << "[DeathBoard] Loaded!\n";
 }

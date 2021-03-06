@@ -4,7 +4,7 @@ bool DeathBoard_sidebar;
 
 void loadConfig()
 {
-	std::string config_file = "config\\deathboard.json";
+	std::string config_file = "plugins\\DeathBoard\\deathboard.json";
 	std::ifstream fs;
 	fs.open(config_file, std::ios::in);
 	DeathBoard_sidebar = true;
@@ -15,10 +15,6 @@ void loadConfig()
 		if (of)
 		{
 			of << "{\n\"enableSidebar\": true\n}";
-		}
-		else
-		{
-			std::cout << "[DeathBoard] " << "config file creation failed, plase create \"config\" folder\n";
 		}
 	}
 	else
@@ -37,6 +33,7 @@ void loadConfig()
 
 void entry()
 {
+	filesystem::create_directory("plugins\\DeathBoard");
 	loadConfig();
 	Event::addEventListener([](ServerStartedEV ev) {
 		liteloader::runcmdEx(u8"scoreboard objectives add deathboard dummy ËÀÍö°ñ");
