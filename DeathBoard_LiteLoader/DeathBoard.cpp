@@ -33,7 +33,7 @@ void loadConfig()
 
 void entry()
 {
-	filesystem::create_directory("plugins\\DeathBoard");
+	std::filesystem::create_directory("plugins\\DeathBoard");
 	loadConfig();
 	Event::addEventListener([](ServerStartedEV ev) {
 		liteloader::runcmdEx(u8"scoreboard objectives add deathboard dummy ËÀÍö°ñ");
