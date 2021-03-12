@@ -1,7 +1,7 @@
 # DeathBoard
 
 极为简单的死亡榜插件  
-目前只支持BedrockX 0711及以上
+兼容BedrockX和LiteLoader
 
 ## Download
 
